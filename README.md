@@ -1,6 +1,6 @@
-Setting up Git and IDE
+<h2>Setting up Git and IDE</h2>
 
-How to start with WEB PROGRAMMING?
+<h1>How to start with WEB PROGRAMMING?</h1>
 
  -> Create a GITHUB account 
  -> Create a Repository where you can store your files
