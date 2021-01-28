@@ -20,7 +20,7 @@ How to create branch and operations like push, pull, merge, commit your changes 
  <p>Refer Screenshots in the Documentation folder for better understanding. </p>
 
 
-<h2> Introduction to HTML and CSs </h2>
+<h2> Introduction to HTML and CSS </h2>
 
 <p>The ICP2 folder contains: </p>
 
