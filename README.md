@@ -18,3 +18,16 @@ How to create branch and operations like push, pull, merge, commit your changes 
  <p>-> Merge your pull request </p>
  
  <p>Refer Screenshots in the Documentation folder for better understanding. </p>
+
+
+<h2> Introduction to HTML and CSs </h2>
+
+<p>The ICP2 folder contains: </p>
+
+<p> 1) The source code for the general html elements like paragraphs, headings, inline, block, video etc</p>
+
+<p> 2) The source code for google home page task </p>
+
+<p> 3) The source code for Grid using div and span with flexbox </p>
+
+<p> All the screenshots are attached to the wiki page to view the output </p>
