@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link href="rockPaperGame.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class="container result-container">
+        <div class="row">
+                <div class="col-xl-4">
+                </div>
+                <div class="col-xl-4">
+                    <h1 class="result">Result</h1>
+                    <h3 id="result" class="result">Click on below buttons to begin the game</h3>
+                </div>
+                <div class="col-xl-4">
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5">
+                <img id="player-selected-image" src="">
+            </div>
+            <div class="col-xl-2">
+            </div>
+            <div class="col-xl-5">
+                <img id="system-selected-image" src="">
+            </div>
+    </div>
+    </div>
+    <div class="container buttons">
+        <div class="row">
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-6 ">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div class="col-xl-3">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <div id="player">
+
+                </div>
+            </div>
+            <div class="col-xl-4 reset-button">
+                <button id="reset" onclick="resetToInitial()">Reset</button>
+            </div>
+            <div class="col-xl-4">
+                <div id="system">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container score-board">
+        <div class="row">
+            <div class="col-xl-4">
+                <div>
+                    <h2>Player</h2>
+                    <h3 id="playerScore">0</h3>
+                </div>
+            </div>
+            <div class="col-xl-4">
+            </div>
+            <div class="col-xl-4">
+                <div>
+                    <h2>System</h2>
+                    <h3 id="systemScore">0</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+    <script type="text/javascript" src="rockPaperGame.js"></script>
+</body>
+
+</html>

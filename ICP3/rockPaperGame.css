@@ -1,0 +1,45 @@
+.result-container{
+    text-align: center;
+    height: 350px;
+}
+.buttons{
+    text-align: center;
+    height: 75px;
+}
+.score-board{
+    text-align: center;
+}
+.reset-button{
+    text-align: center;
+}
+#reset{
+    width: 200px;
+    height: 40px;
+    background-color: lightgreen;
+    border: white;
+}
+html{
+    height: 100%;
+}
+#player-selected-image, #system-selected-image{
+height: 250px;
+}
+body{
+    height: 100%;
+}
+.wrapper{
+    background-color: #DAF7A6;
+    height: 100%;
+}
+#result{
+    color: salmon;
+}
+.result{
+    font-size: -webkit-xxx-large;
+}
+#rock,#paper,#scissors{
+    width: 120px;
+    border-radius: 10px;
+    background-color: lightblue;
+    height: 40px;
+}
