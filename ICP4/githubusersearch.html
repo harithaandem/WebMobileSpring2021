@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="githubusersearch.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>GITHUB USER SEARCH</title>
+</head>
+
+<body id="main_id" class="body">
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="app-name">Github User Search</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col">
+                        <div class="row menu-items">
+                            <h3 id="home" class="menu">Home</h3>
+                            <h3 id="about" class="menu">About Us</h3>
+                            <h3 id="contact" class="menu">Contact Us</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div"><br></div>
+    <div class="container-fluid">
+        <div class="row search-holder">
+            <div class="col-3">
+            </div>
+            <div class="col-6 search-container">
+                <input type="text" id="text-box" placeholder="Search for User">
+                <button type="submit" id="user_search" class="search">Search</button>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="user-holder" class="row conatiner">
+
+        </div>
+    </div>
+
+    <div id="mymodal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 id="user_name"></h1>
+                <span class="close">&times;</span>
+            </div>
+            <div id="modal_body" class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+               
+            </div>
+            <div>
+            </div>
+
+            <script src="gitusersearch.js" defer>
+            </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
