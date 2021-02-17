@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+.item{
+    cursor: pointer;
+}
+
+.strike{
+    text-decoration: line-through;
+    color: green;
+}
+#delete-icon{
+    cursor: pointer;
+}
+#accept{
+    margin-right: 15px;
+}
+#todo-text{
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+}
+#add-todo,#delete-selected-todo, #delete-all-todo{
+    margin: 10px;
+    padding: 10px;
+    background: white
+}
+.todo-actionbar{
+    padding: 10px;
+    text-align: center;
+}
+.todo-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.todo-item{
+    border: 1px solid #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    padding: 10px;
+    background-color:white;
+}

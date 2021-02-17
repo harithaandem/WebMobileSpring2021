@@ -1,0 +1,22 @@
+<div class="todo-wrapper">
+    <h1>TODOLIST</h1>
+    <div>
+        <div class="todo-actionbar">
+           <input type="text" id="todo-text"  #toDoText name="toDoText"/> 
+           <button id="add-todo" (click)="addTodo(toDoText.value)">ADD</button>
+        </div>
+        <div class="todo-actionbar">
+            <button id="delete-selected-todo" (click)="deleteSelected()">DELETE SELECTED</button>
+            <button id="delete-all-todo" (click)="deleteAll()">DELETE ALL</button>
+        </div>
+        <div class="todo-container" *ngFor="let todo of toDoDetails">
+            <div class="todo-item" > 
+                <div>
+                    <input type="checkbox" id="accept" (click)="selectTodo(todo)">
+                    <span [ngClass]="{strike: todo.isCompleted}" class="item" (click)="completeToDo(todo)" >{{todo.toDoText}}</span> 
+                </div>
+               <i class="fa fa-trash" id="delete-icon" (click)="deleteToDo(todo)" ></i>
+            </div>
+        </div>
+    </div>
+</div>
