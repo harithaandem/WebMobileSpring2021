@@ -10,12 +10,9 @@ export class CountdowntimerComponent  {
 
   title = 'CountDown';
   date = "may 06 2021";
-  countDownDate = new Date(this.date).getTime();
-  setDate(date: any) {
-    this.date = date ? date : 'may 06 2021';
-    this.countDownDate = new Date(date).getTime();
-  }
-  
+  dateTime: Date = new Date("may 06 2021");
+  countDownDate = new Date(this.dateTime).getTime();
+
   demo: any;
   day: any;
   hrs: any;
@@ -25,10 +22,12 @@ export class CountdowntimerComponent  {
   dt1: any;
   x = setInterval(() => {
     let now = new Date().getTime();
-    let distance = this.countDownDate - now;
+    let distance = new Date(this.dateTime).getTime() - now;
     this.day = Math.floor(distance / (1000 * 60 * 60 * 24));
     this.hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     this.mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     this.secs = Math.floor((distance % (1000 * 60)) / (1000));
   });
+
+  constructor() {}
 }
