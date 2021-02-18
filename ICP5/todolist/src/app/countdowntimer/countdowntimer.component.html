@@ -1,0 +1,27 @@
+<div>
+    <table>
+        <thead style="text-align: center">
+            <td colspan="4"> Timer is set for </td>
+        </thead>
+        <tbody>
+            <tr class="val">
+
+                <td>{{day}}<br><span> days</span></td>
+                <td>{{hrs}}<br><span> hours</span></td>
+                <td>{{mins}}<br><span> minutes</span></td>
+                <td>{{secs}}<br><span> seconds</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="4">{{date}}</td>
+        </tfoot>
+    </table>
+    <div>
+        <input matInput
+        [matDatepicker]="picker"
+        placeholder="Different locale"
+        (dateChange)="setDate($event.value)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker type="datetime"></mat-datepicker>
+    </div>
+</div>
