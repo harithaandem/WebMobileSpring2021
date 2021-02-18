@@ -16,12 +16,24 @@
             <td colspan="4">{{date}}</td>
         </tfoot>
     </table>
-    <div>
+    <!-- <div>
         <input matInput
         [matDatepicker]="picker"
         placeholder="Different locale"
         (dateChange)="setDate($event.value)">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker type="datetime"></mat-datepicker>
-    </div>
+    </div> -->
+    <div class="example-wrapper">
+    <h2>Basic</h2>
+
+    <label class="example-input-wrapper">
+        Date Time:
+        <input placeholder="Date Time:"
+               [(ngModel)]="dateTime"
+               [owlDateTimeTrigger]="dt"  [owlDateTime]="dt">
+        <owl-date-time #dt></owl-date-time>
+    </label>
+
+    <h4>Value From Picker: {{dateTime}}</h4>
 </div>

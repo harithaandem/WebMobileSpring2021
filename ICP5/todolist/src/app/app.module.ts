@@ -16,7 +16,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatDatetimepickerModule, MatNativeDatetimeModule } from "@mat-datetimepicker/core";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from 'mat-input';
-
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from "ng-pick-datetime";
 
 
 @NgModule({
@@ -37,13 +37,14 @@ import { MatInputModule } from 'mat-input';
     MatDatetimepickerModule,
     MatNativeDatetimeModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule ,
+    OwlDateTimeModule, OwlNativeDateTimeModule
     // MatInputModule,
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'fr-FR' },
-    { provide: MAT_DATE_LOCALE, useValue: 'fr-FR' },
-    { provide: MAT_DATE_LOCALE, useValue: 'ko-KR' },
+    { provide: LOCALE_ID, useValue: 'en' },
+    { provide: MAT_DATE_LOCALE, useValue: 'en' },
+    { provide: MAT_DATE_LOCALE, useValue: 'en' },
     { provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE] },
     { provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS }
   ],
