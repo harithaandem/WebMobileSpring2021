@@ -1,0 +1,35 @@
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+li{
+    font-size: 20px;
+}
+
+.app-name{
+    font-size: xx-large;
+    padding: 20px;
+    padding-left: 70px;
+}
+
+.container{
+    width: 100%;
+    align-items: center;
+    /* border: gray 2px solid;
+    border-radius: 10px;
+    margin: 10px; */
+}
+
+.topmenu{
+    width:100%;
+}
+
+a{
+    border: 2px solid beige;
+    border-radius: 20px;
+    padding: 15px;
+    background: whitesmoke;
+}
