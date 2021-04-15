@@ -52,10 +52,10 @@ public class QueryUtils {
             URLConnection urlconnect= url.openConnection();
             BufferedReader buffer_in = new BufferedReader(new InputStreamReader(urlconnect.getInputStream()));
 
-            String input;
+            String inputLine;
 
-            while ((input = buffer_in.readLine()) !=  null) {
-                stringBuilder.append(input);
+            while ((inputLine = buffer_in.readLine()) !=  null) {
+                stringBuilder.append(inputLine);
             }
             if(buffer_in != null){
                 buffer_in.close();
@@ -67,14 +67,15 @@ public class QueryUtils {
                         Add each earthquake object to the list(earthquakes) and return it.
                 */
 
-
             JSONObject readerObject = new JSONObject(jsonResponse);
+
 
             JSONArray jsonArray = (JSONArray) readerObject.get("features");
 
             int jsonLen=jsonArray.length();
 
             for(int count=0;count <jsonLen ; count++){
+
 
                 JSONObject json = jsonArray.getJSONObject(count).getJSONObject("properties");
                 System.out.println(json);
@@ -88,7 +89,6 @@ public class QueryUtils {
         } catch (Exception e) {
             Log.e(LOG_TAG, "Exception:  ", e);
         }
-        // Return the list of earthquakes
         return earthquakes;
     }
 }
